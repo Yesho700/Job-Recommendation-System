@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Recommendation Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #recommendations {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Job Recommendation Service</h1>
+    <form id="userForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br><br>
+
+        <label for="skills">Skills (comma separated):</label>
+        <input type="text" id="skills" required><br><br>
+
+        <label for="experience_level">Experience Level:</label>
+        <select id="experience_level" required>
+            <option value="Junior">Junior</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Senior">Senior</option>
+        </select><br><br>
+
+        <label for="desired_roles">Desired Roles (comma separated):</label>
+        <input type="text" id="desired_roles" required><br><br>
+
+        <label for="locations">Preferred Locations (comma separated):</label>
+        <input type="text" id="locations" required><br><br>
+
+        <label for="job_type">Job Type:</label>
+        <select id="job_type" required>
+            <option value="Full-Time">Full-Time</option>
+            <option value="Part-Time">Part-Time</option>
+            <option value="Contract">Contract</option>
+        </select><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="recommendations"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
